@@ -87,3 +87,14 @@ o HTML, CSS, JS files.
 o Any assets used (e.g., images, sounds).
 
 · A functional preview link (if hosted on a platform like GitHub Pages).
+
+
+ <!-- var sounds = {
+    greenBox: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"),
+    redBox: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"),
+    blueBox: new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"),
+    yellowBox: new Audio ("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
+  }; -->
+
+
+  <!-- https://gist.github.com/micahbales/32f2afe2f33bcbafca786387bd359cbc -->
