@@ -59,7 +59,7 @@
 //         level = 0;
 //         gameActive = true;
 //         nextLevel();
-//     }, 1000); // 1-second delay before restarting the game
+//     }, 1000); 
 // }
 
 
@@ -128,10 +128,10 @@
 //     soundEnabled = event.target.checked;
 // });
 
-// // Start the game when the user clicks the start button
+
 // document.getElementById('startGame').addEventListener('click', startGame);
 
-// // Stop the game when the user clicks the stop button
+
 // document.getElementById('stopGame').addEventListener('click', stopGame);
 
 // document.getElementById('restartGame').addEventListener('click', restartGame);
@@ -196,7 +196,7 @@ class SimonGame {
             this.level = 0;
             this.gameActive = true;
             this.nextLevel();
-        }, 1000); // 1-second delay before starting the game
+        }, 1000); 
     }
 
     stopGame() {
@@ -220,7 +220,7 @@ class SimonGame {
             this.level = 0;
             this.gameActive = true;
             this.nextLevel();
-        }, 1000); // 1-second delay before restarting the game
+        }, 1000); 
     }
 
     nextLevel() {
@@ -275,7 +275,7 @@ class SimonGame {
     }
 }
 
-// Initialize the game
+// Init
 document.addEventListener('DOMContentLoaded', () => {
     new SimonGame();
 });

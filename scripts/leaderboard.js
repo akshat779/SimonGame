@@ -68,7 +68,7 @@ class Leaderboard {
     }
 }
 
-// Initialize the leaderboard
+// leaderboard init
 document.addEventListener('DOMContentLoaded', () => {
     new Leaderboard();
 });
