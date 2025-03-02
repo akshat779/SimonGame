@@ -279,3 +279,7 @@ class SimonGame {
 document.addEventListener('DOMContentLoaded', () => {
     new SimonGame();
 });
+
+
+// _______________________________________________________
+

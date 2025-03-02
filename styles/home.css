@@ -1,4 +1,4 @@
-.simon-img{
+/* .simon-img{
     width: 25%;
     height: 25%;
     object-fit: cover;
@@ -14,4 +14,44 @@
 
 .rules{
     text-align: left;
+} */
+
+/* _________________________________________________ */
+
+
+.simon-img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-container {
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-container {
+    height: auto;
+}
+
+.rules {
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btn-primary, .btn-danger, .btn-warning {
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover, .btn-danger:hover, .btn-warning:hover {
+    transform: scale(1.1);
 }
