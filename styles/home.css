@@ -1,0 +1,17 @@
+.simon-img{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.main-container{
+   height: 100vh;
+}
+
+.hero-container{
+    height: auto;
+}
+
+.rules{
+    text-align: left;
+}
