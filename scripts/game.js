@@ -136,7 +136,7 @@
 
 // document.getElementById('restartGame').addEventListener('click', restartGame);
 
-// __________________++++++++______________+++++++++++++_____________________________
+// __________________++++++++______________+++++++++++++___________________
 
 
 class SimonGame {
@@ -170,7 +170,7 @@ class SimonGame {
         document.getElementById('soundToggle').addEventListener('change', (event) => {
             this.soundEnabled = event.target.checked;
         });
-        
+
         document.getElementById('difficulty').addEventListener('change', (event) => {
             this.difficulty = event.target.value;
         });
