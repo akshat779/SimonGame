@@ -154,6 +154,7 @@ class SimonGame {
         this.gameActive = false;
         this.playerName = '';
         this.soundEnabled = false;
+        this.difficulty = 'easy'
         this.scoreCount = document.getElementById('score-count');
         this.sounds = {
             green: new Audio('./../assets/sounds/green.mp3'),
@@ -168,6 +169,10 @@ class SimonGame {
     initEventListeners() {
         document.getElementById('soundToggle').addEventListener('change', (event) => {
             this.soundEnabled = event.target.checked;
+        });
+        
+        document.getElementById('difficulty').addEventListener('change', (event) => {
+            this.difficulty = event.target.value;
         });
 
         document.getElementById('startGame').addEventListener('click', () => this.startGame());
@@ -234,12 +239,26 @@ class SimonGame {
     }
 
     playSequence(sequence) {
+        const speed = this.getSpeed();
         sequence.forEach((color, index) => {
             setTimeout(() => {
                 if (!this.gameActive) return;
                 this.lightUpQuadrant(color);
-            }, index * 1000);
+            }, index * speed);
         });
+    }
+
+    getSpeed() {
+        switch (this.difficulty) {
+            case 'easy':
+                return 1000;
+            case 'medium':
+                return 700;
+            case 'hard':
+                return 400;
+            default:
+                return 1000;
+        }
     }
 
     lightUpQuadrant(color) {
