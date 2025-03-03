@@ -97,4 +97,4 @@ o Any assets used (e.g., images, sounds).
   }; -->
 
 
-  <!-- https://gist.github.com/micahbales/32f2afe2f33bcbafca786387bd359cbc -->
+<!-- https://akshat779.github.io/SimonGame/pages/game.html -->
